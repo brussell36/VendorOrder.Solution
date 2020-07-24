@@ -49,5 +49,19 @@ namespace VendorOrder.Tests
       int answer = newVendor.Id;
       Assert.AreEqual(1, answer);
     }
+
+    [TestMethod]
+    public void GetAll_ReturnAllVendorObjects_VendorList()
+    {
+      string name01 = "Ben's Brewery";
+      string description01 = "Located in North Portland";
+      string name02 = "Anna's Coffee";
+      string description02 = "Located in St. John's";
+      Vendor newVendor01 = new Vendor(name01, description01);
+      Vendor newVendor02 = new Vendor(name02, description02);
+      List<Vendor> newList = new List<Vendor> {newVendor01, newVendor02};
+      List<Vendor> answer = Vendor.GetAll();
+      CollectionAssert.AreEqual(newList, answer);
+    }
   }
 }
