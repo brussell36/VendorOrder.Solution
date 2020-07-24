@@ -30,7 +30,7 @@ namespace VendorOrder.Tests
       string date = "Friday Jul 24";
       Order newOrder = new Order(title, description, price, date);
       string result = newOrder.Description;
-      Assert.AreEqual(5, result);
+      Assert.AreEqual(description, result);
     }
   }
 }
