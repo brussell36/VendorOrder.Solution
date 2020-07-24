@@ -2,14 +2,16 @@
   Layout = "_Layout";
 }
 <div class="container">
-  <h1>Vendor Order Details: </h1>
+  <div class="jumbotron">
+    <h1>Vendor Order Details: </h1>
 
-  <h2>@Model["orders"].Title</h2>
-  <h2>@Model["orders"].Description</h2>
-  <h2>@Model["orders"].Price</h2>
-  <h2>@Model["orders"].Date</h2>
-  <h3>Vendor: @Model["vendors"].Name</h3>
+    <h2>@Model["orders"].Title</h2>
+    <h2>@Model["orders"].Description</h2>
+    <h2>@Model["orders"].Price</h2>
+    <h2>@Model["orders"].Date</h2>
+    <h3>Vendor: @Model["vendors"].Name</h3>
 
-  <a href='/vendors/@Model["vendors"].Id/orders/new'>Add another order</a>
-  <a href='/vendors'>View all vendors</a>
+    <a href='/vendors/@Model["vendors"].Id/orders/new'>Add another order</a>
+    <a href='/vendors'>View all vendors</a>
+  </div>
 </div>

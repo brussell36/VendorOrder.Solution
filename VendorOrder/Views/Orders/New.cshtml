@@ -2,26 +2,27 @@
   Layout = "_Layout";
 }
 <div class="container">
-  <h1>Add a new order to @Model.Name</h1>
-
-  <form action="/vendors/@Model.Id/orders" method="post">
-    <div class="form-group">
-      <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-      <label for="orderTitle">Order Title</label>
-      <input id="orderTitle" class="form-control" name="orderTitle" type="text">
-    </div>
-    <div class="form-group">
-      <label for="orderDescription">Order Description</label>
-      <input id="orderDescription" class="form-control" name="orderDescription" type="text">
-    </div>
-    <div class="form-group">
-      <label for="orderPrice">Order Price</label>
-      <input id="orderPrice" class="form-control" name="orderPrice" type="text">
-    </div>
-    <div class="form-group">
-      <label for="orderDate">Order Date</label>
-      <input id="orderDate" class="form-control" name="orderDate" type="text">
-    </div>
-    <button class="btn btn-primary" type="submit">Submit</button>
-  </form>
+  <div class="jumbotron">
+    <form action="/vendors/@Model.Id/orders" method="post">
+      <div class="form-group">
+        <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+        <label for="orderTitle">Order Title</label>
+        <input id="orderTitle" class="form-control" name="orderTitle" type="text">
+      </div>
+      <div class="form-group">
+        <label for="orderDescription">Order Description</label>
+        <input id="orderDescription" class="form-control" name="orderDescription" type="text">
+      </div>
+      <div class="form-group">
+        <label for="orderPrice">Order Price</label>
+        <input id="orderPrice" class="form-control" name="orderPrice" type="text">
+      </div>
+      <div class="form-group">
+        <label for="orderDate">Order Date</label>
+        <input id="orderDate" class="form-control" name="orderDate" type="text">
+      </div>
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    <h1>Add a new order to @Model.Name</h1>
+  </div>
 </div>

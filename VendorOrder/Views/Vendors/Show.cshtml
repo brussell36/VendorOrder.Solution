@@ -3,16 +3,18 @@
 }
 @using VendorOrder.Models;
 <div class="container">
-  <h3>Here are all the orders for this vendor:</h3>
+  <div class="jumbotron">
+    <h3>Here are all the orders for this vendor:</h3>
 
-  <ol>
-  @foreach (Order orders in @Model["orders"])
-  {
-    <li><a href="/vendors/@Model["vendors"].Id/orders/@orders.Id">@orders.Description</a></li>
-  }
-  </ol>
+    <ol>
+    @foreach (Order orders in @Model["orders"])
+    {
+      <li><a href="/vendors/@Model["vendors"].Id/orders/@orders.Id">@orders.Description</a></li>
+    }
+    </ol>
 
-  <p><a href='/vendors/@Model["vendors"].Id/orders/new'>Add a new order</a> </p>
-  <p><a href='/vendors'>Return to vendor list</a></p>
-  <p><a href='/'>Return to Main Page</a></p>
+    <p><a href='/vendors/@Model["vendors"].Id/orders/new'>Add a new order</a> </p>
+    <p><a href='/vendors'>Return to vendor list</a></p>
+    <p><a href='/'>Return to Main Page</a></p>
+  </div>
 </div>

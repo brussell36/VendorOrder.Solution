@@ -2,20 +2,22 @@
   Layout = "_Layout";
 }
 <div class="container">
-  <h1>Add a Vendor</h1>
+  <div class="jumbotron">
+    <h1>Add a Vendor</h1>
 
-  <form action="/vendors" method="post">
-    <div class="form-group">
-      <label for="vendorName">Vendor name</label>
-      <input id="vendorName" class="form-control" name="vendorName" type="text">
-    </div>
-    <div class="form-group">
-      <label for="vendorDescription">Vendor description</label>
-      <input for="vendorDescription" class="form-control" name="vendorDescription" type="text">
-    </div>
-    <button class="btn btn-primary" type="submit">Add</button>
-  </form>
+    <form action="/vendors" method="post">
+      <div class="form-group">
+        <label for="vendorName">Vendor name</label>
+        <input id="vendorName" class="form-control" name="vendorName" type="text">
+      </div>
+      <div class="form-group">
+        <label for="vendorDescription">Vendor description</label>
+        <input for="vendorDescription" class="form-control" name="vendorDescription" type="text">
+      </div>
+      <button class="btn btn-primary" type="submit">Add</button>
+    </form>
 
-  <p><a href="/">Back home</a></p>
-  <p><a href="/vendors">Back to categories</a></p>
+    <p><a href="/">Back home</a></p>
+    <p><a href="/vendors">Back to categories</a></p>
+  </div>
 </div>

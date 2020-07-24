@@ -2,8 +2,24 @@
   margin-top: 5%;
 }
 
+.jumbotron {
+  background-color: rgba(245, 245, 245, 0.74);
+  border: solid 1px #343a40;
+  border-radius: 10px;
+}
+
 body {
   background-image: url(https://www.bakemag.com/ext/resources/images/2019/9/WolfermansBakery_Assortment.jpg?1569513925);
   background-repeat: no-repeat;
   background-size: 100%;
+  color: #111d5e;
+  font-weight: 700;
+}
+
+a {
+  color: #ff4301;
+}
+
+h1 {
+  font-size: 5em;
 }
