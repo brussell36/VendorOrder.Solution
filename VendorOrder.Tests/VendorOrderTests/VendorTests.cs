@@ -6,11 +6,11 @@ using System;
 namespace VendorOrder.Tests
 {
   [TestClass]
-  public class CategoryTest : IDisposable
+  public class VendorTest : IDisposable
   {
     public void Dispose()
     {
-      Category.ClearAll();
+      Vendor.ClearAll();
     }
 
     [TestMethod]
@@ -19,3 +19,5 @@ namespace VendorOrder.Tests
       Vendor newVendor = new Vendor("test vendor");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
+  }
+}

@@ -11,7 +11,7 @@ namespace VendorOrder.Tests
 
     public void Dispose()
     {
-      Item.ClearAll();
+      Order.ClearAll();
     }
 
     [TestMethod]
@@ -20,3 +20,5 @@ namespace VendorOrder.Tests
       Order newOrder = new Order("test");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
+  }
+}

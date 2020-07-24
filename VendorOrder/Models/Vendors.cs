@@ -14,7 +14,7 @@ namespace VendorOrder.Models
       Name = vendorName;
       _instances.Add(this);
       Id = _instances.Count;
-      Orders = new List<Order>{};
+      Order = new List<Order>{};
     }
 
     public static void ClearAll()
@@ -34,7 +34,7 @@ namespace VendorOrder.Models
 
     public void AddItem(Order order)
     {
-      Items.Add(order);
+      Order.Add(order);
     }
   }
 }

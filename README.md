@@ -10,7 +10,7 @@ _This application will welcome a user with a splash page and ask them if they wo
 
 ## Setup/Installation Requirements
 
-1. Clone this repository from GitHub https://github.com/brussell36/Scrabble.Solution
+1. Clone this repository from GitHub https://github.com/brussell36/VendorOrder.Solution
 2. Open the downloaded directory in a text editor of your choice. (VSCode, Atom, etc.)
 3. Install [.Net Core](https://dotnet.microsoft.com/download/dotnet-core/2.2) 
 4. To install the REPL dotnet script, run dotnet tool install -g dotnet-script in your terminal.
