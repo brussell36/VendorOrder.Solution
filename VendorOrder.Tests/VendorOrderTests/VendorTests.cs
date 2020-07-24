@@ -81,7 +81,7 @@ namespace VendorOrder.Tests
     public void AddOrder_AssociatesOrderWithVendor_OrderList()
     {
       string title = "Ben's Brewery";
-      string description01 = "Located in North Portland";
+      string description01 = "Wants 30 loaves";
       string price = "$90";
       string date = "Friday July 24";
       Order newOrder = new Order(title, description01, price, date);
@@ -89,7 +89,7 @@ namespace VendorOrder.Tests
       string name = "Ben's Brewery";
       string description02 = "Located in North Portland";
       Vendor newVendor = new Vendor(name, description02);
-      newVendor.AddItem(newOrder);
+      newVendor.AddOrder(newOrder);
       List<Order> result = newVendor.Order;
       CollectionAssert.AreEqual(newList, result);
     }
