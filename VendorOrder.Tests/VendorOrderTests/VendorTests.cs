@@ -30,7 +30,7 @@ namespace VendorOrder.Tests
       Assert.AreEqual(name, answer);
     }
 
-        [TestMethod]
+    [TestMethod]
     public void GetDescription_ReturnDescription_String()
     {
       string name = "Ben's Bakery";
@@ -38,6 +38,16 @@ namespace VendorOrder.Tests
       Vendor newVendor = new Vendor(name, description);
       string answer = newVendor.Description;
       Assert.AreEqual(description, answer);
+    }
+
+    [TestMethod]
+    public void GetId_ReturnVendorId_Int()
+    {
+      string name = "Ben's Bakery";
+      string description = "Located in North Portland";
+      Vendor newVendor = new Vendor(name, description);
+      int answer = newVendor.Id;
+      Assert.AreEqual(2, answer);
     }
   }
 }
