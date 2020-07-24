@@ -47,7 +47,7 @@ namespace VendorOrder.Tests
       string description = "Located in North Portland";
       Vendor newVendor = new Vendor(name, description);
       int answer = newVendor.Id;
-      Assert.AreEqual(2, answer);
+      Assert.AreEqual(1, answer);
     }
   }
 }
