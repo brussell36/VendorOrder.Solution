@@ -19,5 +19,23 @@ namespace VendorOrder.Tests
       Vendor newVendor = new Vendor("test vendor");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
+
+    [TestMethod]
+    public void GetName_ReturnName_String()
+    {
+      string name = "Ben's Bakery";
+      Vendor newVendor = new Vendor(name);
+      string answer = newVendor.Name;
+      Assert.AreEqual(name, answer);
+    }
+
+    [TestMethod]
+    public void GetDescription_ReturnDescription_String()
+    {
+      string description = "Located in North Portland";
+      Vendor newVendor = new Vendor(description);
+      string result = newVendor.Description;
+      Assert.AreEqual(description, result)
+    }
   }
 }
