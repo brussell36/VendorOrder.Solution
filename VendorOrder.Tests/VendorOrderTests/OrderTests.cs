@@ -26,7 +26,7 @@ namespace VendorOrder.Tests
     {
       string name = "Ben's Bakery";
       Vendor newVendor = new Vendor(name);
-      string answer = newVendor;
+      string answer = newVendor.Name;
       Assert.AreEqual(name, answer);
     }
   }
