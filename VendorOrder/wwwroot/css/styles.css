@@ -1,9 +1,9 @@
 .container {
   margin-top: 5%;
-  padding-top: 5%;
 }
 
 body {
   background-image: url(https://www.bakemag.com/ext/resources/images/2019/9/WolfermansBakery_Assortment.jpg?1569513925);
-  color: #ff5f40;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
