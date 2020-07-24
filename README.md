@@ -26,10 +26,10 @@ _This application will welcome a user with a splash page and ask them if they wo
 
 | Behavior | Input | Output |  Completed(Y/N?)  |
 | -------- | ----- | ------ | -------- |
-| 1. Create bread and pastry objects that will hold int values | 2 bread and 3 pastry | Your order will be $15 and you get a free loaf of bread! | N |
-| 2. Will determine how many loaves of bread and how many pastries the user would like | 2 bread and 3 pastry | Your order will be $15 and you get a free loaf of bread! | N |
-| 3. Program will compare the amount the user would like with cost of items | 2 bread and 3 pastry | Your order will be $15 and you get a free loaf of bread! | N |
-| 4. Will account for the deals Pierre has determined for his shop | 2 bread and 3 pastry | Your order will be $15 and you get a free loaf of bread! | N |
+| 1. Create vendor object that will hold name value | Ben's Banging Bread | Ben's Banging Bread | N |
+| 2. Allow user to add multiple vendor objects that have unique Ids | Anna's Awesome Angelfood cake | Id: 2 | N |
+| 3. Create order object that will hold title, description, price and date values | Ben's Banging Bread, would like 30 loaves for $90 on 7/24/2020 |  | N |
+| 4. Allow user to input all data for these objects in forms on connected pages |  |  | N |
 
 
 ## Known Bugs
