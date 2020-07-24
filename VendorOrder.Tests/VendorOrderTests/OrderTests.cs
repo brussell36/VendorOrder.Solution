@@ -20,5 +20,14 @@ namespace VendorOrder.Tests
       Order newOrder = new Order("test");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
+
+    [TestMethod]
+    public void GetName_ReturnName_String()
+    {
+      string name = "Ben's Bakery";
+      Vendor newVendor = new Vendor(name);
+      string answer = newVendor;
+      Assert.AreEqual(name, answer);
+    }
   }
 }
