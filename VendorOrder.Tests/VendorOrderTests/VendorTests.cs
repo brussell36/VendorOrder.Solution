@@ -76,5 +76,22 @@ namespace VendorOrder.Tests
       Vendor answer = Vendor.Find(2);
       Assert.AreEqual(newVendor02, answer);
     }
+
+    [TestMethod]
+    public void AddOrder_AssociatesOrderWithVendor_OrderList()
+    {
+      string title = "Ben's Brewery";
+      string description01 = "Located in North Portland";
+      string price = "$90";
+      string date = "Friday July 24";
+      Order newOrder = new Order(title, description01, price, date);
+      List<Order> newList = new List<Order> { newOrder };
+      string name = "Ben's Brewery";
+      string description02 = "Located in North Portland";
+      Vendor newVendor = new Vendor(name, description02);
+      newVendor.AddItem(newOrder);
+      List<Order> result = newVendor.Order;
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
