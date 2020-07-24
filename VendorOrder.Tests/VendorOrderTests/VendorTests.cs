@@ -63,5 +63,18 @@ namespace VendorOrder.Tests
       List<Vendor> answer = Vendor.GetAll();
       CollectionAssert.AreEqual(newList, answer);
     }
+
+    [TestMethod]
+    public void Find_ReturnCorrectVendor_Vendor()
+    {
+      string name01 = "Ben's Brewery";
+      string description01 = "Located in North Portland";
+      string name02 = "Anna's Coffee";
+      string description02 = "Located in St. John's";
+      Vendor newVendor01 = new Vendor(name01, description01);
+      Vendor newVendor02 = new Vendor(name02, description02);
+      Vendor answer = Vendor.Find(2);
+      Assert.AreEqual(newVendor01, answer);
+    }
   }
 }
